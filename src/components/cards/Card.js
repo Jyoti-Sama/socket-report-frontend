@@ -53,7 +53,7 @@ const CardGroups = () => {
                     <Image
                         floated='right'
                         size='medium'
-                        src={`http://localhost:5000/${image}`}
+                        src={`https://socket-report-backend.herokuapp.com/${image}`}
                     />
                     <Card.Header>{title}</Card.Header>
                     <Card.Meta>- by {name}</Card.Meta>
