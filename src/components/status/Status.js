@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import io from 'socket.io-client';
 
 function StatusComponent() {
-    const socket = io(`http://localhost:5000`);
+    const socket = io(`https://socket-report-backend.herokuapp.com`);
 
     const [status, setStatus] = useState('')
 

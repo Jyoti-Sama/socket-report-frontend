@@ -21,7 +21,7 @@ function ImageUpload() {
             console.log(formData);
 
             try {
-                const response = await axios.post('http://localhost:5000/report/image', formData, {
+                const response = await axios.post('https://socket-report-backend.herokuapp.com/report/image', formData, {
                     headers: {
                         origin: 'http://localhost:3000'
                     },

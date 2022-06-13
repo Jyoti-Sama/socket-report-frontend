@@ -12,7 +12,7 @@ import ImageUpload from './ImageUpload';
 import { setImageUpload, setImageUrl, setIsDataFilled, setisEditClicked, setStateChanger } from '../../reducers/reducers';
 
 const AddEditForm = () => {
-    const socket = io(`http://localhost:5000`);
+    const socket = io(`https://socket-report-backend.herokuapp.com`);
 
     const { images, isImageUploaded, isEditClicked, editReportId, editReportName, editReportTitle, editReportDetails, isDataFilled } = useSelector((state) => state.reportData);
     const dispatch = useDispatch();

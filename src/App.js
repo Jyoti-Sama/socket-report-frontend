@@ -3,13 +3,7 @@ import { Button } from "semantic-ui-react";
 import CardGroups from "./components/cards/Card";
 import AddEditForm from "./components/form/Form";
 
-import { useDispatch, useSelector } from 'react-redux'
-import { setIsReportPage } from "./reducers/reducers";
-
 function App() {
-  const dispatch = useDispatch();
-
-  const { isReportPage } = useSelector((state) => state.reportData);
 
   return (
     <div>

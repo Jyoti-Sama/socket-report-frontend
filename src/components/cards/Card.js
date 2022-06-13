@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {  setEditReportDetails, setEditReportId, setEditReportName, setEditReportTitle, setIsDataFilled, setisEditClicked, setIsReportPage, setReport, setStateChanger } from '../../reducers/reducers';
 
 const CardGroups = () => {
-    const socket = io(`http://localhost:5000`);
+    const socket = io(`https://socket-report-backend.herokuapp.com`);
 
     const { reports, stateChanger } = useSelector((state) => state.reportData);
     const dispatch = useDispatch();
